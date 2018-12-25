@@ -1,0 +1,75 @@
+{
+  "name": "ssr-create-react-app",
+  "version": "0.0.1",
+  "description": "Server-Side Rendering for Create React App by Harald Rudell",
+  "author": "Harald Rudell <harald.rudell@gmail.com> (http://haraldrudell.com)",
+  "license": "ISC",
+  "main": "bin/addssr",
+  "scripts": {
+    "build": "npm-run-all --parallel 'build:*'",
+    "build:eslint": "eslint src/render/*.mjs src/server/*.mjs",
+    "build:binAddSsr": "rollup --config node:es2049package",
+    "build:build": "es2049scripts -- node config",
+    "clean": "rimraf bin publish/lib",
+    "reinstall": "npm-run-all --serial 'reinstall:*'",
+    "reinstall:clean": "rimraf node_modules",
+    "reinstall:install": "yarn",
+    "testfs": "jest --testRegex '.*' src/installFs.itest.js",
+    "testfs2": "bash -c '(cd tmp/ssr-create-react-app-test && SKIP_PREFLIGHT_CHECK=true yarn ssr)'",
+    "test": "npm-run-all --serial 'test:*'",
+    "test:clean": "clean tmp",
+    "test:jest": "jest",
+    "pub": "yarn publish --patch --access public",
+    "ssr": "npm-run-all --parallel 'ssr:*'",
+    "ssr:dev": "react-scripts start",
+    "ssr:buildssr": "npm-run-all --serial 'server:*'",
+    "server:build": "rollup --config node:es2049package",
+    "server:render": "es2049scripts src/render buildbin",
+    "server:copy": "cp -a pki/* buildbin",
+    "server:run": "node buildbin/server"
+  },
+  "bin": {
+    "addssr": "bin/addssr"
+  },
+  "rollup": {
+    "shebang": true
+  },
+  "keywords": [
+    "Create React App",
+    "React",
+    "Component",
+    "Library",
+    "lib",
+    "rollup"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haraldrudell/ssr-create-react-app"
+  },
+  "dependencies": {
+    "allspawn": "^1.0.1",
+    "chokidar": "^2.0.4",
+    "fs-extra": "^7.0.1",
+    "koa": "^2.6.2",
+    "koa-logger": "^3.2.0",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "react-scripts-harussr": "^2.1.2"
+  },
+  "devDependencies": {
+    "es2049package": "^1.0.1",
+    "es2049scripts": "^1.0.0",
+    "jest": "^23.6.0",
+    "jest-esnext": "^0.0.4",
+    "npm-run-all": "^4.1.5"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md"
+  ]
+}

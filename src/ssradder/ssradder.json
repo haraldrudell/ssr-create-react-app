@@ -1,0 +1,35 @@
+{
+  "scripts": {
+    "ssr": "npm-run-all --parallel 'ssr:*'",
+    "ssr:dev": "react-scripts start",
+    "ssr:buildssr": "npm-run-all --serial 'server:*'",
+    "server:build": "rollup --config node:es2049package",
+    "server:render": "es2049scripts src/render buildbin",
+    "server:copy": "cp -a pki/* buildbin",
+    "server:run": "node buildbin/server"
+  },
+  "main": "buildbin/server",
+  "rollup": {
+    "input": "src/server/server"
+  },
+  "installDev": [
+    "es2049package",
+    "es2049scripts",
+    "npm-run-all"
+  ],
+  "install": [
+    "allspawn",
+    "chokidar",
+    "fs-extra",
+    "koa",
+    "koa-logger",
+    "koa-mount",
+    "koa-router",
+    "koa-static",
+    "koa2-cors",
+    "react@next",
+    "react-dom@next",
+    "react-scripts-harussr"
+  ],
+  "gitignore": "/buildssr\n/buildbin"
+}
