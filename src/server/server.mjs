@@ -12,9 +12,8 @@ import path from 'path'
 import fs from 'fs-extra'
 
 const {homepage} = pj
-const theUrl = homepage && typeof homepage === 'string' ? homepage : 'https:///'
-const urlObject = new URL(theUrl)
-const staticUri = urlObject.pathname // '/uri'
+const theUrl = homepage && typeof homepage === 'string' ? homepage : ''
+const staticUri = theUrl ? new URL(theUrl).pathname : '/' // '/uri'
 
 const options = {
   loadKeyCert: true,

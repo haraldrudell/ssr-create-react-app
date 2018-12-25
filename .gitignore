@@ -26,6 +26,4 @@ chrome-user-data
 *.swo
 /lib
 /bin
-/tmp/buildssr
-/buildbin
-/buildssr
+/tmp

@@ -17,16 +17,18 @@ export default class SsrAdder {
       this.copy('src/server'),
       this.copy('src/render'),
       this.copy('src/index.js', 'srcindex.js', true),
+      this.copy('src/ssr.js'),
+      this.copy('public/ssr'),
       this.copy('pki'),
       this.install({install, installDev}),
       this.patchGitignore(gitignore),
     ])
   }
 
-  async copy(rel, from, overWrite) {
+  async copy(rel, from, overwrite) {
     const dst = path.resolve(rel)
-    if (!overWrite && await fs.pathExists(dst)) return
-    return fs.copy(path.join(__dirname, from || path.basename(rel)), dst)
+    if (!(overwrite = !!overwrite) && await fs.pathExists(dst)) return
+    return fs.copy(path.join(__dirname, from || path.basename(rel)), dst, {overwrite})
   }
 
   async install({install, installDev}) {

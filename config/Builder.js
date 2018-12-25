@@ -20,7 +20,7 @@ class Builder {
 
   async build() {
     this.bin = _path.default.resolve('bin');
-    return Promise.all([this.copy('src/render'), this.copy('src/server'), this.copy('src/ssradder/srcindex.js'), this.copy('pki')]);
+    return Promise.all([this.copy('src/render'), this.copy('src/server'), this.copy('src/ssradder/srcindex.js'), this.copy('src/ssradder/ssr.js'), this.copy('src/ssradder/ssr'), this.copy('pki')]);
   }
 
 }

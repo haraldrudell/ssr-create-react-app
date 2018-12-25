@@ -13,6 +13,8 @@ export default class Builder {
       this.copy('src/render'),
       this.copy('src/server'),
       this.copy('src/ssradder/srcindex.js'),
+      this.copy('src/ssradder/ssr.js'),
+      this.copy('src/ssradder/ssr'),
       this.copy('pki'),
     ])
   }
