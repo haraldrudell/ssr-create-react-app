@@ -1,4 +1,33 @@
-# Lib-Create-React-App
+# Ssr-Create-React-App
+
+<html lang=en>
+  <meta charset=utf-8>
+  <h1>Server-Side Renderin for Create React App</h1>
+
+## © 2018-present Harald Rudell <harald.rudell@gmail.com> (http://www.haraldrudell.com)
+
+  <p>This package adds server-side rendering to an existing Create React App project</p>
+  <p>Dan Abramnov says “<a href="">SSR is hard</a>”: not anymore!</p>
+  &emsp;
+
+  <img src=https://raw.githubusercontent.com/haraldrudell/ssr-create-react-app/master/assets/cover.png alt="cover" />
+
+  <p><a href="https://haraldrudell.github.io/ssr/">Live at <strong>haraldrudell.github.io/ssr</strong></a></p>
+  &emsp;
+
+
+<p>This project hacked together while making this <a href=https://youtu.be/sn9InqfNtSQ>video 11 min</a> which demonstrates how to add server-side rendering to a Create React App</p>
+&emsp;
+
+## link: [Hire Harald Rudell](https://hire.surge.sh/)
+
+## link: [Sponsor Harald Rudell](https://www.gofundme.com/san-francisco-revenge-crime-victim/)
+
+&emsp;
+
+## © 2018-present Harald Rudell <harald.rudell@gmail.com> (http://www.haraldrudell.com)
+</html>
+
 
 **[Lib Create React App](https://github.com/haraldrudell/lib-create-react-app)** allows React components to be publicly published as npm packages
 
