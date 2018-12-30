@@ -7,16 +7,24 @@
 ## © 2018-present Harald Rudell <harald.rudell@gmail.com> (http://www.haraldrudell.com)
 
   <p>This package adds server-side rendering to an existing Create React App project</p>
-  <p>Dan Abramnov says “<a href="">SSR is hard</a>”: not anymore!</p>
+  <p><strong>Dan Abramov</strong> says “<a href="">SSR is hard</a>”: not anymore!</p>
   &emsp;
 
   <img src=https://raw.githubusercontent.com/haraldrudell/ssr-create-react-app/master/assets/cover.png alt="cover" />
 
-  <p><a href="https://haraldrudell.github.io/ssr/">Live at <strong>haraldrudell.github.io/ssr</strong></a></p>
+  <p>This cover live at <a href="https://haraldrudell.github.io/ssr/"><strong>haraldrudell.github.io/ssr</strong></a></p>
   &emsp;
 
+  <p>Demonstration <a href=https://youtu.be/sn9InqfNtSQ>video 11 min</a>: add server-side rendering to a Create React App</p>
+  &emsp;
 
-<p>This project hacked together while making this <a href=https://youtu.be/sn9InqfNtSQ>video 11 min</a> which demonstrates how to add server-side rendering to a Create React App</p>
+# Usage
+
+Relaunch your Create React App with server-side rendering:
+* **yarn add --dev ssr-create-react-app**
+* **yarn addssr**
+* **yarn ssr**
+
 &emsp;
 
 ## link: [Hire Harald Rudell](https://hire.surge.sh/)
@@ -27,51 +35,3 @@
 
 ## © 2018-present Harald Rudell <harald.rudell@gmail.com> (http://www.haraldrudell.com)
 </html>
-
-
-**[Lib Create React App](https://github.com/haraldrudell/lib-create-react-app)** allows React components to be publicly published as npm packages
-
-[click for **Video presentation**, 10 min](https://youtu.be/KVaOVjiH2SQ)
-
-## © 2018-present Harald Rudell <harald.rudell@gmail.com> (http://www.haraldrudell.com)
-
-&emsp;
-
-# Usage
-
-Publish to npm in 3 commands:
-* **yarn add --dev lib-create-react-app**
-* **yarn preplib**
-* **yarn pub**
-
-&emsp;
-
-Implementation notes:
-* A separate package.json for npm is at **publish/package.json**
-* Separate **LICENSE** and **README.md** in **publish/**
-* Components to export in **src/libindex.js**
-* Package content at **publish/lib/**
-
-&emsp;
-
-### Components
-* [react-rollup](https://github.com/haraldrudell/react-rollup.git) the [Create React App](https://github.com/facebook/create-react-app) build pipeline ported to [Rollup](https://rollupjs.org)
-* [lib-create-react-app](https://github.com/haraldrudell/lib-create-react-app) that adapts, builds and publishes a React project to npm
-* [es2049package](https://github.com/haraldrudell/ECMAScript2049/tree/master/workspace/packages/es2049package) a configuration-free bundler for CommonJS and ECMAScript modules
-
-&emsp;
-
-### Example Project
-* [demo-context-store](https://github.com/haraldrudell/demo-context-store.git) a single-truth store in 94% less code lines
-
-&emsp;
-
-## link: [Hire Harald Rudell](https://hire.surge.sh/)
-
-## link: [Sponsor Harald Rudell](https://www.gofundme.com/san-francisco-revenge-crime-victim/)
-
-&emsp;
-
-**[Lib Create React App](https://github.com/haraldrudell/lib-create-react-app)** creates shareable libraries from projects bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## © 2018-present Harald Rudell <harald.rudell@gmail.com> (http://www.haraldrudell.com)
