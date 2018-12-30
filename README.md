@@ -2,9 +2,10 @@
 
 <html lang=en>
   <meta charset=utf-8>
-  <h1>Server-Side Renderin for Create React App</h1>
+  <h1>Server-Side Rendering for Create React App</h1>
 
 ## © 2018-present Harald Rudell <harald.rudell@gmail.com> (http://www.haraldrudell.com)
+  &emsp;
 
   <p>This package adds server-side rendering to an existing Create React App project</p>
   <p><strong>Dan Abramov</strong> says “<a href="">SSR is hard</a>”: not anymore!</p>
